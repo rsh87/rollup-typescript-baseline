@@ -13,7 +13,7 @@ export default {
 
     plugins: [
         typescript(),
-        postcss({ extendions: ['.css'], plugins: [postcssImport] }),
+        postcss({ plugins: [postcssImport] }),
         serve({
             contentBase: 'dist',
             open: true,
