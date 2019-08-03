@@ -1,0 +1,35 @@
+{
+    "name": "rollup-typescript-baseline",
+    "version": "1.0.0",
+    "description": "baseline for projects",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rimraf dist && rollup -c && copyfiles -u 1 src/index.html dist",
+        "serve": "http-server dist -p 8800 -o -c0",
+        "lint": "eslint ./src --ext .ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rsh87/rollup-typescript-baseline.git"
+    },
+    "author": "Rune Sejer Hoffmann",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rsh87/rollup-typescript-baseline/issues"
+    },
+    "homepage": "https://github.com/rsh87/rollup-typescript-baseline#readme",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^1.13.0",
+        "@typescript-eslint/parser": "^1.13.0",
+        "copyfiles": "^2.1.1",
+        "eslint": "^5.3.0",
+        "http-server": "0.9.0",
+        "prettier": "^1.18.2",
+        "rimraf": "^2.6.3",
+        "rollup": "^1.18.0",
+        "rollup-plugin-loadz0r": "^0.7.2",
+        "rollup-plugin-typescript2": "^0.22.1",
+        "typescript": "^3.5.3"
+    }
+}
